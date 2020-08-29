@@ -1,0 +1,292 @@
+/* CSS files add styling rules to your content */
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+@font-face {
+  font-family: "Bespoke-R40K4cJxyk";
+  src: url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.eot?v=1598689300115");
+  src: url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.eot?v=1598689300115?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.woff?v=1598689300606")
+      format("woff"),
+    url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.ttf?v=1598689300806")
+      format("truetype"),
+    url("https://cdn.glitch.com/e65c6bfb-f5bf-4ddf-a967-53a0e911a960%2FBespoke-R40K4cJxyk.svg?v=1598689303109")
+      format("svg");
+}
+
+body {
+  font-family: "Inconsolata";
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 12pt;
+  line-height: 20pt;
+}
+
+h1,
+h2,
+h3 {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Bespoke-R40K4cJxyk";
+  color: #373fff;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+h4, h4 a {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12pt;
+  line-height: 14pt;
+}
+
+a {
+  color: #373fff;
+}
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 25px;
+  /*   list-style-type: none; */
+}
+
+li.bullet {
+  /*   list-style-type: "- "; */
+  margin: 0;
+  padding: 0;
+}
+
+li.bullet a {
+  color: black;
+}
+
+li a {
+  color: black;
+  text-decoration: underline;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lime;
+}
+
+.nav-container-content {
+  flex: 1 0 auto;
+}
+
+.nav-container > div {
+  margin: 5px;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: "Bespoke-R40K4cJxyk";
+  font-size: 14pt;
+  vertical-align: bottom;
+}
+
+.nav-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.main-container > div {
+  padding: 3%;
+}
+
+#sub-nav {
+  flex: 1;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right;
+  margin-top: 2%;
+}
+
+div#sub-nav ul {
+  list-style-type: none;
+}
+
+div#sub-nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-panel {
+  flex: 2.5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-right: 10%;
+  margin-top: 2%;
+}
+
+.date {
+  flex: 1;
+}
+
+.outline {
+  flex: 6;
+}
+
+#home-panel {
+  flex: 1;
+}
+
+.assignment-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 3%;
+  padding: 0px;
+}
+.assignment-grid-item {
+  border: none;
+  margin: 0;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.rubric-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 0;
+  padding: 0px;
+}
+.rubric-grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 10px;
+  font-size: 10pt;
+  line-height: 12pt;
+  text-align: left;
+}
+
+.two-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 3%;
+  padding: 20px;
+  background-color:black;
+  color:white;
+}
+
+.two-grid-item {
+  width: 300px;
+  border: none;
+  margin-right: 50px;
+  text-align: left;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.btn,
+p.itemPara,
+p {
+  padding: 12px 16px;
+  margin: 2px;
+}
+
+a.itemLink,
+p.itemPara {
+  float: left;
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #f1f1f1;
+}
+
+.filterDiv,
+.show {
+  float: left;
+  width: 100%;
+}
+
+.filterDiv,
+.show,
+.btn {
+  margin: 2px 2px;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+#myBtnContainer {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border-radius: 12px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn.tech:hover {
+  background-color: #ffb3ff;
+}
+
+.btn.active {
+  color: white;
+}
+.btn.tech.active {
+  background-color: #cc00cc;
+  color: white;
+}
+
+.btn.tech {
+  background-color:#ffe6ff;
+  
+}
+
+.btn.topic {
+  background-color: #e6f2ff;
+}
+
+.btn.topic:hover {
+  background-color: #b3d7ff;
+}
+
+.btn.topic.active {
+  background-color: #0077ff;
+}
