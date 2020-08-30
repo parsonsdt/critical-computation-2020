@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Inconsolata";
+  font-family: "Inconsolata", monospace;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@ h3 {
 }
 
 h1 {
-  font-family: "Bespoke-R40K4cJxyk";
+  font-family: "Bespoke-R40K4cJxyk", monospace;
   color: #373fff;
   font-size: 20px;
   line-height: 28px;
@@ -50,7 +50,8 @@ h3 {
   line-height: 26px;
 }
 
-h4, h4 a {
+h4,
+h4 a {
   padding: 0;
   margin: 0;
   color: gray;
@@ -69,6 +70,10 @@ ul {
   margin: 0;
   padding-bottom: 25px;
   /*   list-style-type: none; */
+}
+
+ul.bullet {
+  list-style-type: none;
 }
 
 li.bullet {
@@ -100,7 +105,7 @@ li a {
   margin: 5px;
   padding: 20px 10px;
   text-align: center;
-  font-family: "Bespoke-R40K4cJxyk";
+  font-family: "Bespoke-R40K4cJxyk", monospace;
   font-size: 14pt;
   vertical-align: bottom;
 }
@@ -191,8 +196,8 @@ div#sub-nav ul li a {
   grid-template-columns: auto auto;
   margin-bottom: 3%;
   padding: 20px;
-  background-color:black;
-  color:white;
+  background-color: black;
+  color: white;
 }
 
 .two-grid-item {
@@ -275,8 +280,7 @@ p.itemPara {
 }
 
 .btn.tech {
-  background-color:#ffe6ff;
-  
+  background-color: #ffe6ff;
 }
 
 .btn.topic {
@@ -289,4 +293,32 @@ p.itemPara {
 
 .btn.topic.active {
   background-color: #0077ff;
+}
+
+#reading-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#reading-table th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  vertical-align: top;
+  line-height: 1.3em;
+  box-sizing: border-box;
+}
+
+#reading-table tr:nth-child(even) {
+  background-color: rgba(0, 255, 0, 0.06);
+}
+
+#reading-table ul {
+  padding-left: 20px;
+  padding-bottom: 0px;
+}
+
+.reading-header {
+  width: 45%;
 }
