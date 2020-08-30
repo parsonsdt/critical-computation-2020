@@ -8,35 +8,116 @@
     <title>Critical Computation</title>
 
     <!-- import the webpage's stylesheet -->
-   <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
     <div class="nav-container">
-           <div style ="font-size: 24px">
-            <a href="../">
-        Critical Computation
+      <div style="font-size: 24px">
+        <a href="../">
+          Critical Computation
         </a>
       </div>
       <div><a href="../syllabus/">syllabus</a></div>
-      <div><a href="https://docs.google.com/document/d/1Ys7vgu9EzaN4TJtlDBwhE9Utso-Mci8hIh_kCjhfsH0/edit#heading=h.dwxd84w1owa" target="blank">schedule</a></div>
+      <div>
+        <a
+          href="https://docs.google.com/document/d/1Ys7vgu9EzaN4TJtlDBwhE9Utso-Mci8hIh_kCjhfsH0/edit#heading=h.dwxd84w1owa"
+          target="blank"
+          >schedule</a
+        >
+      </div>
       <div><a href="../assignment/">assignments</a></div>
-            <div><a href="../resource/">resources</a></div>
+      <div><a href="../resource/">resources</a></div>
       <div><a href="../people/">people</a></div>
     </div>
     <div class="main-container">
       <div id="sub-nav">
         <ul>
-          <li><a href="honeylocust.html">Honeylocust</a></li>
-          <li>Section B</li>
-          <li>Section C</li>
+          <li><a href="#section0">Callery-Pear</a></li>
+          <li><a href="#section1">Honeylocust</a></li>
+          <li><a href="#section2">Little Leaf</a></li>
+          <li><a href="#section3">section 4</a></li>
+          <li><a href="#section4">section 5</a></li>
         </ul>
       </div>
       <div id="main-panel">
-        this is where the content goes
+        <div class="block" id="section0">
+          <h1>
+            Callery-Pear
+          </h1>
+        </div>
+        <ul class="bullet">
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+        </ul>
+
+        <div class="block" id="section1">
+          <h1>
+            Honeylocust
+          </h1>
+        </div>
+        <ul class="bullet">
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+        </ul>
+        `
+        <div class="block" id="section2">
+          <h1>
+            Little Leaf
+          </h1>
+        </div>
+        <ul class="bullet">
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+        </ul>
+
+        <div class="block" id="section3">
+          <h1>
+            Section 4
+          </h1>
+        </div>
+        <ul class="bullet">
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+        </ul>
+
+        <div class="block" id="section4">
+          <h1>
+            Section 5
+          </h1>
+        </div>
+        <ul class="bullet">
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+          <li><a href="addPortfolioLink">Student Name, Pronouns</a></li>
+        </ul>
+        `
       </div>
     </div>
+    <script>
+      jQuery(document).ready(function($) {
+        var $root = $("html, body");
+        $('a[href^="#"]').click(function() {
+          var href = $.attr(this, "href");
+          $root.animate(
+            {
+              scrollTop: $(href).offset().top
+            },
+            500,
+            function() {
+              window.location.hash = href;
+            }
+          );
+
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>
