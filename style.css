@@ -121,6 +121,7 @@ li a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-content: flex-start;
 }
 
 .main-container > div {
@@ -133,6 +134,7 @@ li a {
   line-height: 28px;
   text-align: right;
   margin-top: 35px;
+  width: 100%;
 }
 
 div#sub-nav ul {
@@ -304,8 +306,8 @@ p.itemPara {
 }
 
 #reading-table {
-  width: 100%;
   border-collapse: collapse;
+  word-break: break-word;
 }
 
 #reading-table th,
@@ -315,7 +317,6 @@ td {
   padding: 8px;
   vertical-align: top;
   line-height: 1.3em;
-  box-sizing: border-box;
 }
 
 #reading-table tr:nth-child(even) {
@@ -328,5 +329,102 @@ td {
 }
 
 .reading-header {
-  width: 45%;
+  width: 46%;
+}
+
+#table-panel {
+  width: 100%;
+}
+
+.divider-mobile {
+  display: none;
+}
+
+/*  */
+@media only screen and (max-width: 600px) {
+  .divider-mobile {
+    display: block;
+    border: 0.1px solid black;
+  }
+  .main-container {
+    display: block;
+  }
+
+  .main-container div {
+    display: block;
+  }
+
+  .assignment-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  #main-panel {
+    padding: 1em;
+  }
+
+  #main-panel li,
+  ol {
+    margin-left: 15px;
+  }
+
+  #main-panel h1,
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  #sub-nav {
+    text-align: left;
+    margin: 0;
+    width: auto;
+  }
+
+  .nav-container div {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  #reading-table td ul {
+    margin: 0 0 0 -20px;
+  }
+
+  .two-grid-container {
+    overflow: hidden;
+  }
+
+  .people {
+    margin-left: -15px;
+  }
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  /*   height: 400px; */
+  display: inline-block;
+  float: left;
+  margin-bottom: 2%;
+}
+
+.blackBox {
+  display: inline-block;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.splash {
+  display: block;
+  width: 500px;
+  color: lime;
+  padding: 5%;
+  font-family: "Bespoke-R40K4cJxyk", monospace;
+  font-size: 40px;
+  line-height: 50px;
+}
+.splash a {
+  color: lime;
+  text-decoration: none;
 }
