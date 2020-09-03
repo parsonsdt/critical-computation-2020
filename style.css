@@ -428,3 +428,14 @@ iframe {
   color: lime;
   text-decoration: none;
 }
+
+img{
+  width: 100%;
+}
+
+.inline-img{
+  display: block;
+  width: 600px;
+  height: auto;
+  margin-bottom: 3%;
+}
