@@ -429,8 +429,12 @@ iframe {
   text-decoration: none;
 }
 
-img{
-  width: 80%;
+img {
+  height: 300px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 2%;
+  margin-right: 2%;
 }
 
 .inline-img{
@@ -438,4 +442,17 @@ img{
   width: 600px;
   height: auto;
   margin-bottom: 3%;
+}
+
+.full-width-box {
+  width: 100%;
+  margin-bottom: 2%;
+  display: inline-block;
+  float: left;
+}
+
+.scriptBox{
+  display: inline-box;
+  float: left;
+  width: 650px;
 }
